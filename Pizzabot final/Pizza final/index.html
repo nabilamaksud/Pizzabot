@@ -1,0 +1,28 @@
+<!-- code/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Bot</title>
+</head>
+<body>
+  <form id="pizzaForm">
+    <label for="pizzaType">Pizza Type:</label>
+    <select id="pizzaType" name="pizzaType">
+      <option value="vegetarian">Vegetarian Pizza</option>
+      <option value="hawaiian">Hawaiian Pizza</option>
+      <option value="pepperoni">Pepperoni Pizza</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <button type="button" onclick="orderPizza()">Order</button>
+  </form>
+
+  <div id="response"></div>
+
+  <script src="bot.js"></script>
+</body>
+</html>
